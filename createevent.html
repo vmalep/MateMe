@@ -40,7 +40,37 @@
       </ul>
     </nav>
   </header>
-  
+  <h2 class="createevent">Create your event</h2>
+  <form class="formcreateevent">
+    <label for="firstName"><span class="createeventlabel">Name</span></label><br />
+    <input
+      type="text"
+      id="createeventname"
+      name="name"
+      value="Tell us your name..."
+    /><br />
+    <label for="city"><span class="createeventlabel">Which city</span></label><br />
+    <input
+      type="text"
+      id="createeventcity"
+      name="city"
+      value="Select the city"
+    /><br />
+    <label for="date"><span class="createeventlabel">Which date</span></label><br />
+    <input
+      type="text"
+      id="createeventdate"
+      name="date"
+      value="Pick a date"
+    /><br />
+    <label for="message"><span class="createeventlabel">Explain the event</span></label><br />
+    <textarea id="messagecreateevent" name="message">Explain a short description of the event</textarea><br />
+    <input type="submit" value="Submit" />
+  </form>
+
+
+
+
   <script src="src/index.js"></script>
   <script src="src/header.js"></script>
 </body>
