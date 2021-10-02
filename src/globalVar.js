@@ -1,4 +1,4 @@
-const cityList = [
+cityList = [
   {
     name: "Paris",
     briefDescr: "La ville lumière",

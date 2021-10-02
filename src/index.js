@@ -19,6 +19,8 @@ const cards = document.querySelector(".cards");
   }
 ]; */
 
+console.log(cityList);
+
 function createCard(title, imageUrl, briefDescr) {
   const card = document.createElement("a");
   card.classList.add("card");
