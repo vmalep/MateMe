@@ -1,0 +1,175 @@
+/**** I kept this file as a bkp because I found duplicate blocs, not sure why... */
+
+/********Main settings & Avatar**********/
+#navBar-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(40, 139, 27, 0.5);
+  max-height: clamp(45px, 75px, 100px);
+  align-content: center;
+}
+
+/* !!! This second #navBar-header block was found and the end of the header css section */
+#navBar-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(62, 70, 61, 0.5);
+  max-height: clamp(45px, 75px, 100px);
+  width: 100%;
+  position: fixed;
+}
+
+/* !!! This class is not used */
+.nav-header {
+  margin-top: -100px;
+  width: 100%;
+}
+
+#avatar {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: solid 3px rgb(167, 157, 157);
+  align-self: center;
+}
+
+.avatar-header {
+  font-size: 350%;
+  width: 10%;
+}
+
+.brandName a {
+  font-size: 250%;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+nav {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 10%;
+  text-align: end;
+}
+
+/* !!! This second nav block was found and the end of the header css section */
+nav {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 10%;
+}
+/*****************************************/
+
+/************Button*********************/
+#menu-btn {
+  font-size: clamp(50px, 100%, 350%);
+  height: 100%;
+  background-color: rgb(167, 157, 157);
+  border: none;
+  border-radius: 5px;
+  margin-left: -30px;
+}
+
+/* !!! This second #menu-btn block was found and the end of the header css section */
+#menu-btn {
+  font-size: clamp(50px, 100%, 350%);
+  height: 55px;
+  background-color: rgba(167, 157, 157, 0.4);
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+/**************************************/
+
+/*************Menu & toggle settings************/
+#menu {
+  margin-top: 0;
+  padding: 30px;
+}
+
+.menu-off {
+  visibility: hidden;
+  display: flex;
+  flex-flow: wrap column;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 10, 0.5);
+  position: relative;
+  text-align: center;
+  margin-left: -250px;
+}
+
+/* !!! This second .menu-off block was found and the end of the header css section */
+.menu-off {
+  visibility: hidden;
+  display: flex;
+  flex-flow: nowrap column;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 10, 0.5);
+  position: relative;
+  text-align: center;
+  margin-left: -230px;
+  height: auto;
+}
+
+.menu-on {
+  visibility: visible;
+}
+
+.menu-list {
+  list-style: none;
+  margin: 10px;
+}
+
+.nav-link-header {
+  text-decoration: none;
+  color: white;
+  margin-right: 20px;
+  font-size: 300%;
+}
+
+/* !!! This second .nav-link-header block was found and the end of the header css section */
+.nav-link-header {
+  text-decoration: none;
+  color: rgb(243, 236, 236);
+  margin-right: 20px;
+  font-size: 300%;
+}
+
+.nav-link-header:hover {
+  color: orange;
+}
+
+.nav-link-header:hover {
+  color: rgb(243, 161, 9);
+}
+
+/********Main settings & Avatar**********/
+
+.brandName {
+  align-self: center;
+}
+.brandName a {
+  font-size: 250%;
+  margin-top: 10px;
+  text-decoration: none;
+  color: rgb(243, 236, 236);
+  font-weight: bold;
+}
+
+/*************Menu & toggle settings************/
+
+.menu-on {
+  visibility: visible;
+}
+
+.menu-list {
+  list-style: none;
+  margin: 10px;
+}

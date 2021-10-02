@@ -1,0 +1,129 @@
+.city-body {
+  font-family: sans-serif;
+  margin: 0px; /* 50px 8%; */
+  box-sizing: border-box;
+  background-image: url("../img/torre-eiffel-3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.a-city:link {
+  color: white;
+}
+
+.a-city:visited {
+  color: rgb(40, 212, 40);
+}
+
+.a-city:hover {
+  color: yellow;
+}
+
+.where1 {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.city-h2 {
+  margin-top: 100px;
+  margin-left: 10px;
+  text-align: left;
+  font-size: 50px;
+  /* margin: 50px 5%; */
+}
+
+#event-list {
+  display: flex;
+  flex-flow: wrap column;
+  align-items: center;
+}
+
+.event1 {
+  border: 1px black solid;
+  border-radius: 10px;
+  max-width: 500px;
+  padding: 10px 40px;
+  margin: 10px;
+  display: flex;
+  opacity: 1;
+  background-color: rgba(11, 102, 90, 0.5);
+  color: white;
+}
+
+.part1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: space-between;
+  flex-direction: column;
+}
+
+.part2 {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding-left: 50px;
+}
+
+.buttonevent1 {
+  margin-bottom: 10px;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 17px;
+  border: 1px black solid;
+}
+
+.buttonevent1:hover {
+  background-color: #1e90ff; /* Green */
+  color: white;
+}
+/**Joshs media for eventboxes city.html **/
+@media screen and (min-width: 470px) {
+  .part1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: space-between;
+    flex-direction: column;
+    min-width: 192px;
+  }
+}
+/** @media city-page  **/
+
+@media screen and (max-width: 360px) {
+  .city-body {
+    box-sizing: border-box;
+  }
+  .event1 {
+    border: 1px black solid;
+    border-radius: 10px;
+    max-width: 300px;
+    width: 80%;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+  }
+
+  .part1 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .part2 {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .buttonevent1 {
+    margin-bottom: 40px;
+    border-radius: 8px;
+    padding: 10px 10px;
+    font-size: 17px;
+    border: 1px black solid;
+  }
+}

@@ -1,0 +1,94 @@
+/********Main settings & Avatar**********/
+
+#navBar-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(62, 70, 61, 0.5);
+  max-height: clamp(45px, 75px, 100px);
+  width: 100%;
+  position: fixed;
+}
+
+.nav-header {
+  margin-top: -100px;
+  width: 100%;
+}
+
+#avatar {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: solid 3px rgb(167, 157, 157);
+  align-self: center;
+}
+.brandName {
+  align-self: center;
+}
+.brandName a {
+  font-size: 250%;
+  margin-top: 10px;
+  text-decoration: none;
+  color: rgb(243, 236, 236);
+  font-weight: bold;
+}
+
+nav {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 10%;
+  text-align: end;
+}
+/*****************************************/
+
+/************Button*********************/
+#menu-btn {
+  font-size: clamp(50px, 100%, 350%);
+  height: 100%;
+  background-color: rgb(167, 157, 157);
+  border: none;
+  border-radius: 5px;
+  margin-left: -30px;
+}
+/**************************************/
+
+/*************Menu & toggle settings************/
+#menu {
+  margin-top: 0;
+  padding: 30px;
+}
+
+.menu-off {
+  visibility: hidden;
+  display: flex;
+  flex-flow: wrap column;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 10, 0.5);
+  position: relative;
+  text-align: center;
+  margin-left: -250px;
+}
+
+.menu-on {
+  visibility: visible;
+}
+
+.menu-list {
+  list-style: none;
+  margin: 10px;
+}
+
+.nav-link-header {
+  text-decoration: none;
+  color: white;
+  margin-right: 20px;
+  font-size: 300%;
+}
+
+.nav-link-header:hover {
+  color: rgb(243, 161, 9);
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/city.css" />
+    <link rel="stylesheet" href="src/header.css" />
+    <link rel="stylesheet" href="src/footer.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body class="city-body">
+    <header id="navBar-header" class="nav-header">
+      <img
+        id="avatar"
+        src="https://images.unsplash.com/photo-1540331547168-8b63109225b7"
+      />
+
+      <div class="brandName">
+        <a href="index.html">MateMe</a>
+      </div>
+
+      <nav id="dropdown-menu">
+        <button id="menu-btn">≡</button>
+        <ul id="menu" class="menu-off">
+          <li class="menu-list">
+            <a href="index.html" class="nav-link-header">Home</a>
+          </li>
+          <li class="menu-list">
+            <a href="#" class="nav-link-header">Events</a>
+          </li>
+          <li class="menu-list">
+            <a href="#" class="nav-link-header">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <h2 class="city-h2">Paris</h2>
+    <!--Josh: to center events-->
+    <div id="event-list">
+      <section class="event1">
+        <div class="part1">
+          <h3>Boardgame night</h3>
+          <h3>
+            <span class="where1">
+              <i style="font-size: 24px;" class="fa">&#xf041;</i>
+              <a class="a-city" href="http://lenid-coconludique.com/"
+                >LE NID - Cocon Ludique</a
+              >
+            </span>
+          </h3>
+        </div>
+        <div class="part2">
+          <a href="event.html"><button class="buttonevent1">Join!</button></a>
+          <p class="date">
+            <i style="font-size: 24px;" class="fa">&#xf274;</i> 03.10.2021 / 6pm
+          </p>
+        </div>
+      </section>
+
+      <section class="event1">
+        <div class="part1">
+          <h3>Cheese and Wine</h3>
+          <h3>
+            <span class="where1">
+              <i style="font-size: 24px;" class="fa">&#xf041;</i>
+              <a class="a-city" href="https://wine-tasting-in-paris.com/"
+                >Wine Tasting In Paris</a
+              >
+            </span>
+          </h3>
+        </div>
+        <div class="part2">
+          <button class="buttonevent1">Join!</button>
+          <p class="date">
+            <i style="font-size: 24px;" class="fa">&#xf274;</i> 03.10.2021 / 6pm
+          </p>
+        </div>
+      </section>
+    </div>
+    <script src="src/city.js"></script>
+    <script src="src/header.js"></script>
+  </body>
+</html>

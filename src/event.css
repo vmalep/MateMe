@@ -1,0 +1,10 @@
+.city-body {
+  font-family: sans-serif;
+  margin: 0px; /* 50px 8%; */
+  box-sizing: border-box;
+  background-image: url("../img/torre-eiffel-3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
