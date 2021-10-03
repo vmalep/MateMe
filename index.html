@@ -13,8 +13,17 @@
     <link rel="stylesheet" href="src/footer.css" />
 
     <title>MateMe</title>
+
+    <!-- Déclaration of the global variables and initialisation of them (see: https://www.py4u.net/discuss/275309)-->
+    <script type='text/javascript' >
+      let cityList = [];
+      let eventList = [];
+    </script>
+    <script type="text/javascript" src="src/globalVar.js"></script>
   </head>
-  <body>
+
+  <!-- Start of the body part -->
+  <body class="city-body">
     <header id="navBar-header">
       <img
         id="avatar"
@@ -45,15 +54,13 @@
     <div class="search-box-div">
       <!-- select a city and dates -->
       <p class="brandintro">
-        <span class="textintrostyle">
           ~ Connect, have fun, find your tribe while you travel ~
-        </span>
       </p>
 
-      <input class="search-box type=" text" placeholder="Write here the city
-      you're in..">
+      <input class="search-box" type="text" placeholder="Write here the city you're in..">
     </div>
     <div class="cards">
+      <a class="card" href="city.html?city=Paris"><div class="card-header"><h2 class="card-title">Paris</h2></div><div class="card-body"><div class="card-img" style="background-image: url(&quot;img/torre-eiffel-3.jpg&quot;);"></div><p class="card-brief-descr">La ville lumière</p></div></a>
       <!-- city cards added here -->
     </div>
     <div class="about-us-section">
@@ -118,9 +125,8 @@
         </div>
       </div>
     </div>
-    <!-- <script language="javascript" type="text/javascript" src="src/footer.txt"></script> <!-- inclusion of the footer -->
 
-    <script src="src/index.js"></script>
-    <script src="src/header.js"></script>
+    <script type="text/javascript" src="src/index.js"></script>
+    <script type="text/javascript" src="src/header.js"></script>
   </body>
 </html>

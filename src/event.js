@@ -4,6 +4,7 @@ const urlParams = new URLSearchParams(QueryString);
 let cityName = "";
 let eventName = "";
 
+/* Getting the city parameter from the url */
 if (urlParams.has("city")) {
   cityName = urlParams.get("city");
 } else console.log("city note defined");

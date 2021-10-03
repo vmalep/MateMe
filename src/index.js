@@ -1,7 +1,7 @@
 const cards = document.querySelector(".cards");
 /* const cityList = require("./cityList"); */
 
-const cityList = [
+/* const cityList = [
   {
     name: "Paris",
     briefDescr: "La ville lumière",
@@ -17,7 +17,9 @@ const cityList = [
     briefDescr: "The best clubs",
     picture: "https://images.unsplash.com/photo-1622182438074-b163bdf8f16c"
   }
-];
+]; */
+
+console.log(cityList);
 
 function createCard(title, imageUrl, briefDescr) {
   const card = document.createElement("a");
