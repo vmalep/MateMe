@@ -27,9 +27,9 @@ function createCard(title, imageUrl, briefDescr) {
   card.href = `city.html?city=${title}`;
   cards.appendChild(card);
 
-  const cardText = document.createElement("div");
-/*   cardHeader.classList.add("card-header"); */
-  card.appendChild(cardText);
+  const cardHeader = document.createElement("div");
+  cardHeader.classList.add("card-header");
+  card.appendChild(cardHeader);
 
   /*   const cardImg = document.createElement("div");
   cardImg.style.backgroundImage = `url(${imageUrl})`;
@@ -39,22 +39,17 @@ function createCard(title, imageUrl, briefDescr) {
   const cardTitle = document.createElement("h2");
   cardTitle.classList.add("card-title");
   cardTitle.innerHTML = title;
-  cardText.append(cardTitle);
-
-  const cardBriefDescr = document.createElement("p");
-  cardBriefDescr.classList.add("card-brief-descr");
-  cardBriefDescr.innerHTML = briefDescr;
-  cardText.append(cardBriefDescr);
+  cardHeader.append(cardTitle);
 
   // Create the cardBody div, add the class card-body and add it to the card
-/*   const cardBody = document.createElement("div");
+  const cardBody = document.createElement("div");
   cardBody.classList.add("card-body");
-  card.appendChild(cardBody); */
+  card.appendChild(cardBody);
 
   const cardImg = document.createElement("div");
   cardImg.style.backgroundImage = `url(${imageUrl})`;
   cardImg.classList.add("card-img");
-  card.append(cardImg);
+  cardBody.appendChild(cardImg);
 
   // Create the cardTitle h2, add the class card-title,
   /*   const cardTitle = document.createElement("h2");
@@ -62,7 +57,10 @@ function createCard(title, imageUrl, briefDescr) {
   cardTitle.innerHTML = title;
   cardBody.append(cardTitle); */
 
-
+  const cardBriefDescr = document.createElement("p");
+  cardBriefDescr.classList.add("card-brief-descr");
+  cardBriefDescr.innerHTML = briefDescr;
+  cardBody.append(cardBriefDescr);
 
   // Step3: Create the cardButton button, add the class card-button,
   // set the text inside the tag to be "Adopt Now"

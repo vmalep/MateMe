@@ -1,17 +1,17 @@
 cityList = [
   {
     name: "Paris",
-    briefDescr: "Since the 17th century, Paris has been one of Europe's major centres of finance, diplomacy, commerce, fashion, gastronomy, science, and arts.",
+    briefDescr: "La ville lumière",
     picture: "img/torre-eiffel-3.jpg",
   },
   {
     name: "Barcelona",
-    briefDescr: "Barcelona's cultural roots go back 2000 years. Since the arrival of democracy, the Catalan language has been promoted, both by recovering works from the past and by stimulating the creation of new works.",
+    briefDescr: "Discover Gaudi",
     picture: "https://images.unsplash.com/photo-1561407531-2b7ccd6b66b2",
   },
   {
     name: "Berlin",
-    briefDescr: "Berlin is a world city of culture, politics, media and science. Its economy is based on high-tech firms and the service sector, encompassing a diverse range of creative industries, research facilities, media corporations and convention venues.",
+    briefDescr: "The best clubs",
     picture: "https://images.unsplash.com/photo-1622182438074-b163bdf8f16c",
   }
 ];
