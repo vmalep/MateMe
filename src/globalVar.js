@@ -2,7 +2,7 @@ cityList = [
   {
     name: "Paris",
     briefDescr: "La ville lumière",
-    picture: "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f"
+    picture: "img/torre-eiffel-3.jpg"
   },
   {
     name: "Barcelona",

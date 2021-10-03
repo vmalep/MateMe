@@ -1,10 +1,12 @@
-.city-body {
+/* Commented out because the same for all the html pages */
+/* the content has been moved to a body tag selector in the style.css file */
+/* .city-body {
   font-family: sans-serif;
-  margin: 0px; /* 50px 8%; */
+  margin: 0px;
   box-sizing: border-box;
   background-image: url("../img/torre-eiffel-3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-}
+} */
