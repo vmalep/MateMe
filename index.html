@@ -1,141 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="src/style.css" />
-    <link rel="stylesheet" href="src/index.css" />
-    <link rel="stylesheet" href="src/header.css" />
-    <link rel="stylesheet" href="src/footer.css" />
 
-    <title>MateMe</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="src/style.css" />
+  <link rel="stylesheet" href="src/index.css" />
+  <link rel="stylesheet" href="src/header.css" />
+  <link rel="stylesheet" href="src/footer.css" />
 
-    <!-- Déclaration of the global variables and initialisation of them (see: https://www.py4u.net/discuss/275309)-->
-    <script type='text/javascript' >
-      let cityList = [];
-      let eventList = [];
-    </script>
-    <script type="text/javascript" src="src/globalVar.js"></script>
-  </head>
+  <title>MateMe</title>
 
-  <!-- Start of the body part -->
-  <body class="city-body">
-    <header id="navBar-header">
-      <img
-        id="avatar"
-        src="https://images.unsplash.com/photo-1540331547168-8b63109225b7"
-      />
+  <!-- Déclaration of the global variables and initialisation of them (see: https://www.py4u.net/discuss/275309)-->
+  <script type='text/javascript'>
+    let cityList = [];
+    let eventList = [];
+  </script>
+  <script type="text/javascript" src="src/globalVar.js"></script>
+</head>
 
-      <div class="brandName">
-        <a href="index.html">MateMe</a>
-      </div>
+<!-- Start of the body part -->
 
-      <nav id="dropdown-menu">
-        <button id="menu-btn">≡</button>
-        <ul id="menu" class="menu-off">
-          <li class="menu-list">
-            <a href="index.html" class="nav-link-header">Home</a>
-          </li>
-          <li class="menu-list">
-            <a href="#" class="nav-link-header">Events</a>
-          </li>
-          <li class="menu-list">
-            <a href="#" class="nav-link-header">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+<body class="city-body">
+  <header id="navBar-header">
+    <img id="avatar" src="https://images.unsplash.com/photo-1540331547168-8b63109225b7" />
 
-    <!-- inclusion of the header -->
-    <div class="search-box-div">
-      <!-- select a city and dates -->
-      <p class="brandintro">
-          ~ Connect, have fun, find your tribe while you travel ~
-      </p>
-
-      <input class="search-box" type="text" placeholder="Write here the city you're in..">
+    <div class="brandName">
+      <a href="index.html">MateMe</a>
     </div>
-    <div class="cards">
-<!--       <a class="card" href="city.html?city=Paris">
-        <div class="card-header">
-           <h2 class="card-title">Paris</h2>
+
+    <nav id="dropdown-menu">
+      <button id="menu-btn">≡</button>
+      <ul id="menu" class="menu-off">
+        <li class="menu-list">
+          <a href="index.html" class="nav-link-header">Home</a>
+        </li>
+        <li class="menu-list">
+          <a href="#" class="nav-link-header">Events</a>
+        </li>
+        <li class="menu-list">
+          <a href="#" class="nav-link-header">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- inclusion of the header -->
+  <div class="search-box-div">
+    <!-- select a city and dates -->
+    <p class="brandintro">
+      ~ Connect, have fun, find your tribe while you travel ~
+    </p>
+
+    <input class="search-box" type="text" placeholder="Write here the city you're in..">
+  </div>
+  <div class="cards">
+    <a class="card" href="city.html?city=Paris">
+      <div class="card-header">
+        <h2 class="card-title">Paris</h2>
       </div>
       <div class="card-body">
         <div class="card-img" style="background-image: url(&quot;img/torre-eiffel-3.jpg&quot;);"></div>
         <p class="card-brief-descr">La ville lumière</p>
       </div>
-      </a>
- -->
-      <!-- city cards added here -->
-    </div>
-    <div class="about-us-section">
-      <h2>About us</h2>
-      <p>
-        The project MateMe was created in response to the need to connect with
-        other travellers and locals while travelling. The idea is that no matter
-        where you travel, you will always find a meeting of your interest where
-        you can exchange experiences, have fun and make new friends.
-      </p>
-      <div class="individual-presentation-section">
-        <div class="individual-card">
-          <div class="circular-portrait">
-            <img src="https://github.com/Elisa-cf.png?size=300" />
-          </div>
-          <div class="individual-card-text">
-            <h4>Elisa Canyelles</h4>
-            <p>
-              Elisa is a travel addict who has lived and travelled in different
-              parts of the world such as New Zealand, Thailand, Malaysia, Sri
-              Lanka and Cambodia. "I have been travelling and living in so many
-              different countries and I have seen the need to connect with
-              people. That's why MateMe is an excellent platform with which it
-              is possible to register for an event and even create your own in
-              just a few minutes."
-            </p>
-          </div>
-        </div>
+    </a>
 
-        <div class="individual-card">
-          <div class="circular-portrait">
-            <img
-              src="https://ca.slack-edge.com/T6SG2QGG2-U02DZNNQZEZ-bbc7a84b80c1-512"
-            />
-          </div>
-          <div class="individual-card-text">
-            <h4>Josh Meyers</h4>
-            <p>
-              The experience of living in Australia for more than a year changed
-              Josh's life. "Arriving in a foreign country where you don't know
-              anyone can be hard at first. With MateMe it is very easy to
-              connect with people and quickly create your own community of new
-              friends."
-            </p>
-          </div>
+    <!-- city cards added here -->
+  </div>
+  <div class="about-us-section">
+    <h2>About us</h2>
+    <p>
+      The project MateMe was created in response to the need to connect with
+      other travellers and locals while travelling. The idea is that no matter
+      where you travel, you will always find a meeting of your interest where
+      you can exchange experiences, have fun and make new friends.
+    </p>
+    <div class="individual-presentation-section">
+      <div class="individual-card">
+        <div class="circular-portrait">
+          <img src="https://github.com/Elisa-cf.png?size=300" />
         </div>
+        <div class="individual-card-text">
+          <h4>Elisa Canyelles</h4>
+          <p>
+            Elisa is a travel addict who has lived and travelled in different
+            parts of the world such as New Zealand, Thailand, Malaysia, Sri
+            Lanka and Cambodia. "I have been travelling and living in so many
+            different countries and I have seen the need to connect with
+            people. That's why MateMe is an excellent platform with which it
+            is possible to register for an event and even create your own in
+            just a few minutes."
+          </p>
+        </div>
+      </div>
 
-        <div class="individual-card">
-          <div class="circular-portrait">
-            <img
-              src="https://storage.googleapis.com/quest_editor_uploads/D9ofZpeSsYbpocg7nelEPTinRsP4blyw.jpg"
-            />
-          </div>
-          <div class="individual-card-text">
-            <h4>Pierre van Male</h4>
-            <p>
-              Pierre loves travelling when he is on holiday. "With MateMe it is
-              possible to register for events and include in your holiday a nice
-              evening where you can meet people and expand your social network."
-            </p>
-          </div>
+      <div class="individual-card">
+        <div class="circular-portrait">
+          <img src="https://ca.slack-edge.com/T6SG2QGG2-U02DZNNQZEZ-bbc7a84b80c1-512" />
+        </div>
+        <div class="individual-card-text">
+          <h4>Josh Meyers</h4>
+          <p>
+            The experience of living in Australia for more than a year changed
+            Josh's life. "Arriving in a foreign country where you don't know
+            anyone can be hard at first. With MateMe it is very easy to
+            connect with people and quickly create your own community of new
+            friends."
+          </p>
+        </div>
+      </div>
+
+      <div class="individual-card">
+        <div class="circular-portrait">
+          <img src="https://storage.googleapis.com/quest_editor_uploads/D9ofZpeSsYbpocg7nelEPTinRsP4blyw.jpg" />
+        </div>
+        <div class="individual-card-text">
+          <h4>Pierre van Male</h4>
+          <p>
+            Pierre loves travelling when he is on holiday. "With MateMe it is
+            possible to register for events and include in your holiday a nice
+            evening where you can meet people and expand your social network."
+          </p>
         </div>
       </div>
     </div>
+  </div>
 
-    <script type="text/javascript" src="src/index.js"></script>
-    <script type="text/javascript" src="src/header.js"></script>
-  </body>
+  <script type="text/javascript" src="src/index.js"></script>
+  <script type="text/javascript" src="src/header.js"></script>
+</body>
+
 </html>
