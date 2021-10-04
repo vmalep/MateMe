@@ -44,7 +44,7 @@
   border: 1px black solid;
   border-radius: 10px;
   max-width: 500px;
-  padding: 10px 40px;
+  padding: 10px 20px;
   margin: 10px;
   display: flex;
   opacity: 1;
@@ -69,14 +69,15 @@
 .buttonevent1 {
   margin-bottom: 10px;
   border-radius: 8px;
-  padding: 10px 20px;
+  padding: 10px 60px;
   font-size: 17px;
   border: 1px black solid;
 }
 
 .buttonevent1:hover {
-  background-color: #1e90ff; /* Green */
-  color: white;
+  background-color: green; /* Green */
+  color:white;
+
 }
 /**Joshs media for eventboxes city.html **/
 @media screen and (min-width: 470px) {
