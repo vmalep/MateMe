@@ -111,12 +111,12 @@
 
 .circular-portrait {
   position: relative;
-  width: 5vw;
-  height: 5vw;
   overflow: hidden;
   border-radius: 50%;
   min-width: 60px;
   min-height: 60px;
+  max-width: 60px;
+  max-height: 60px;
   margin: 15px;
 }
 .circular-portrait img {
