@@ -42,29 +42,36 @@
   </header>
   <h2 class="createevent">Create your event</h2>
   <form class="formcreateevent">
-    <label for="firstName"><span class="createeventlabel">Name</span></label><br />
+    <label for="firstName"><span class="createeventlabel">What's your name?</span></label><br />
     <input
       type="text"
       id="createeventname"
       name="name"
-      value="Tell us your name..."
+      placeholder="Tell us your name"
     /><br />
-    <label for="city"><span class="createeventlabel">Which city</span></label><br />
+    <label for="city"><span class="createeventlabel">Select a city from the list</span></label><br />
     <input
       type="text"
       id="createeventcity"
       name="city"
-      value="Select the city"
-    /><br />
-    <label for="date"><span class="createeventlabel">Which date</span></label><br />
+      placeholder= "City of the event"
+      list= "cities"
+    />
+    <datalist id="cities">
+      <option>Paris</option>
+  <option>Barcelona</option>
+  <option>Berlin</option>
+</datalist>
+    <br />
+    <label for="date"><span class="createeventlabel">Select a date</span></label><br />
     <input
-      type="text"
+      type="date"
       id="createeventdate"
       name="date"
-      value="Pick a date"
+      placeholder="Pick a date"
     /><br />
-    <label for="message"><span class="createeventlabel">Explain the event</span></label><br />
-    <textarea id="messagecreateevent" name="message">Explain a short description of the event</textarea><br />
+    <label for="message"><span class="createeventlabel">Tell us about the event</span></label><br />
+    <textarea id="messagecreateevent" name="message" onfocus="this.value=''">Info about the event</textarea><br />
     <input type="submit" value="Submit" />
   </form>
 

@@ -29,18 +29,57 @@ input[type="text"] {
     font-family: roboto, sans-serif;
 }
 
-textarea {
+input[type="date"] {
     width: 80%;
     max-width: 420px;
     padding: 5px;
     margin-bottom: 15px;
-    padding: 25px 25px;
+    padding: 10px 10px;
     border: 2px black solid;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.8);
     font-size: 15px;
+    font-family: roboto, sans-serif;  
+    color: grey;
+}
+
+input:focus::placeholder {
+    color: transparent;
+  }
+
+  input::-webkit-calendar-picker-indicator {
+    opacity: 100;
+ }
+
+textarea {
+    width: 80%;
+    max-width: 420px;
+    padding: 20px;
+    margin-bottom: 15px;
+    padding: 20px 5px;
+    border: 2px black solid;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+    color: grey;
     font-family: roboto, sans-serif;
 }
+
+input[type="submit"] {
+        margin-bottom: 10px;
+        border-radius: 8px;
+        padding: 10px 50px;
+        font-size: 17px;
+        border: 1px black solid;
+        background: green;
+        color: white
+      }
+      
+      input[type="submit"]:hover {
+        background: yellowgreen; 
+        color: black;
+        padding: 15px 55px;
+      }
 
 .createeventlabel {
     font-size: 20px;
