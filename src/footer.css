@@ -3,8 +3,9 @@ footer {
   justify-content: space-between;
   background-color: rgba(62, 70, 61, 0.5);
   max-height: clamp(45px, 75px, 100px);
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  /* position: fixed; */
 }
 
 footer a {
