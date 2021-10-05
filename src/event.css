@@ -1,4 +1,4 @@
-.city-body {
+.event-body {
   font-family: sans-serif;
   margin: 0px; /* 50px 8%; */
   box-sizing: border-box;
@@ -8,3 +8,17 @@
   background-attachment: fixed;
   background-size: cover;
 }
+
+#event-page-frame {
+  padding-top: 100px;
+}
+
+#event-info {
+  display: flex;
+  align-items:  center;
+  flex-direction: column;
+  border: solid 2px black;
+  width: 80%;
+  max-width: 600px;
+}
+

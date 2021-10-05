@@ -9,17 +9,9 @@
     <link rel="stylesheet" href="src/header.css" />
     <link rel="stylesheet" href="src/footer.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
   </head>
 
-  <body class="city-body">
+  <body class="event-body">
     <header id="navBar-header">
       <img
         id="avatar"
@@ -46,15 +38,51 @@
       </nav>
     </header>
 
-    <main id="event-info">
-      <section>
-        <h2 class="event-title">
-          Boardgames Night!
-        </h2>
-        <p class="display-event-description">
-          Join us at the boardgames night at Cocon Ludique!
-        </p>
+    <main id="event-page-frame">
+
+      <section id="event-info">
+        <div class="top-info">
+          <h4 class="event-title">
+            Boardgames Night!
+          </h4>
+        </div>
+
+        <div class="event-description">
+          <p class="display-event-description">
+            Join us at the boardgames night at Cocon Ludique!
+          </p>
+        </div>
+
+        <div class="event-time">
+          <h4>Date:</h4>
+
+          <div class="event-date-box">
+            <i class='far fa-calendar-check'></i>
+            <div class="event-date-input"></div>
+          </div>
+        </div>
+
+        <div class="event-location">
+          <h4>Where?</h4>
+
+          <div class="event-location-box">
+            <div class="event-location-input">
+          </div>
+        </div>
+
+        <section id="event-map">
+
+        </section>
+
+        <section id="joined-and-join"></section>
+
+        <button id="event-join-btn">
+          Join Us
+        </button>
+        
       </section>
+
+     
     </main>
 
     <script src="src/event.js"></script>
