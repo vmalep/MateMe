@@ -3,17 +3,17 @@ const urlParams = new URLSearchParams(QueryString);
 
 let cityName = "";
 
+/* Getting the city parameter from the url */
 if (urlParams.has("city")) {
   cityName = urlParams.get("city");
 } else console.log("city note defined");
 
-console.log(cityName);
+/* console.log(cityName); */
 
-/* const fileUrl = "./cityList.txt"; // provide file location
+const cityData = cityList.filter(city => city.name == cityName);
+/* https://medium.com/@melaniecp/filtering-an-arrays-objects-based-on-a-value-in-a-key-value-array-using-filter-and-includes-27268968308f */
 
-fetch(fileUrl)
-  .then((r) => r.text())
-  .then((t) => console.log(t)); */
+console.log(cityData);
 
-/* console.log(urlParams.get("event")); //returns US */
-/* console.log(urlParams.append("status", "true")); //returns ?q=losAngeles&country=US&status=true */
+const eventData = eventList.filter(event => event.city == cityName);
+console.log(eventData);

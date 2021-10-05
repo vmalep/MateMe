@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/event.css" />
+    <link rel="stylesheet" href="src/header.css" />
+    <link rel="stylesheet" href="src/footer.css" />
+
+    <title>MateMe</title>
+
+<!--     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    /> -->
+
+    <!-- Déclaration of the global variables and initialisation of them (see: https://www.py4u.net/discuss/275309)-->
+    <script type='text/javascript' >
+      let cityList = [];
+      let eventList = [];
+    </script>
+    <script type="text/javascript" src="src/globalVar.js"></script>
+  </head>
+  
+  <!-- Start of the body part -->
+  <body class="city-body">
+    <header id="navBar-header" class="nav-header">
+      <img
+        id="avatar"
+        src="https://images.unsplash.com/photo-1540331547168-8b63109225b7"
+      />
+
+      <div class="brandName">
+        <a href="index.html">MateMe</a>
+      </div>
+
+      <nav id="dropdown-menu">
+        <button id="menu-btn">≡</button>
+        <ul id="menu" class="menu-off">
+          <li class="menu-list">
+            <a href="index.html" class="nav-link-header">Home</a>
+          </li>
+          <li class="menu-list">
+            <a href="#" class="nav-link-header">Events</a>
+          </li>
+          <li class="menu-list">
+            <a href="#" class="nav-link-header">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <h2 class="city-h2">Boardgames Night!</h2>
+    <p class="display-event-description">
+      Join us at the boardgames night at Cocon Ludique!
+    </p>
+
+
+<!--     <main id="event-info">
+      <section>
+        <h2 class="event-title">
+          Boardgames Night!
+        </h2>
+        <p class="display-event-description">
+          Join us at the boardgames night at Cocon Ludique!
+        </p>
+      </section>
+    </main> -->
+
+    <script type="text/javascript" src="src/event.js"></script>
+    <script type="text/javascript" src="src/header.js"></script>
+  </body>
+</html>

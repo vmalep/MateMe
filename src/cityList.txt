@@ -1,4 +1,0 @@
-name;briefDescr;pictureURL
-"Paris";"La ville lumière","https://images.unsplash.com/photo-1511739001486-6bfe10ce785f"
-"Barcelona";"Discover Gaudi";"https://images.unsplash.com/photo-1561407531-2b7ccd6b66b2"
-"Berlin";"The best clubs";"https://images.unsplash.com/photo-1622182438074-b163bdf8f16c"

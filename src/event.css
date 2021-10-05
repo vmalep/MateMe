@@ -1,6 +1,8 @@
-.event-body {
+/*.event-body {
+
+
   font-family: sans-serif;
-  margin: 0px; /* 50px 8%; */
+  margin: 0px;
   box-sizing: border-box;
   background-image: url("../img/torre-eiffel-3.jpg");
   background-position: center;
@@ -112,3 +114,6 @@
   }
   
 }
+=======
+} */
+>>>>>>> 14248f571b5afe32f12b87eea14ae03c2655f18f
