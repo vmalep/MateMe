@@ -25,8 +25,8 @@
   align-self: center;
 }
 .brandName {
+  display: flex;
   align-self: center;
-  align-content: flex-start;
 }
 .brandName a {
   font-size: 250%;
@@ -40,9 +40,9 @@
   display: block;
   margin: 0;
   padding-left: 0;
-  width: 10%;
   text-align: end;
   padding-inline-start: 0;
+  width: 42px;
 }
 /*****************************************/
 
