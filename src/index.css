@@ -37,7 +37,6 @@
 }
 
 .city-section-title{
-  /* margin: 10%; */
   margin-top: 10%;
   font-size: 200%;
 }
@@ -51,7 +50,6 @@
   justify-content: space-evenly;
 }
 .city-card {
-  visibility: visible;
   border-radius: 10px;
   max-width: 500px;
   width: 400px;
@@ -63,26 +61,6 @@
   opacity: 1;
   color: white;
   text-decoration: none;
-}
-
-.city-card-large {
-  visibility: hidden;
-  border-radius: 10px;
-  max-width: 500px;
-  width: 400px;
-  height: 400px;
-  margin: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 1;
-  color: white;
-  text-decoration: none;
-}
-
-.city-card-large {
-  visibility: visible;
-  width: 400px;
 }
 
 .card-title {
@@ -103,61 +81,20 @@
   max-width: 100%;
 }
 
-/* .card-body {
-  padding: 10px 20px;
-}
-
-.card-body h2 {
-  margin: 10px 0px;
-  justify-self: center;
-} */
-
-/* .card-button {
-  border: none;
-  border-radius: 10px;
-  height: 50px;
-  background-color: lightblue;
-  width: 100%;
-} */
-
-@media screen and (min-width: 840px) {
-  .city-card-large {
-    visibility: visible;
-  }
-
-  .city-card {
-    visibility: hidden;
-  }
-
-  .card-title {
-    margin: 10px;
-    font-size: 500%;
-    color:black;
-  }
-  .card-img-large {
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    width: 600%;
-    max-height: 100%;
-    max-width: 100%;
-  }
-}
-
 /* CSS code for the About Us section */
 .about-us-section {
   display: flex;
   flex-direction: column;
-  margin: 10%;
+  margin: 5% 10%;
   padding: 5%;
   border-radius: 10px;
-  background-color: rgba(0, 5, 10, .5);
+  background-color: rgba(0, 5, 10, 0.63);
 }
 
 .about-us-section h2{
   align-self: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  font-size: clamp(1rem, 0.7153rem + 2vw, 4rem);
 }
 
 .individual-card {
