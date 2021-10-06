@@ -1,9 +1,9 @@
-const cards = document.querySelector(".cards");
+const cards = document.querySelector(".city-cards");
 /* console.log(cityList); */
 
 function createCard(title, imageUrl) {
   const card = document.createElement("a");
-  card.classList.add("card");
+  card.classList.add("city-card");
   card.href = `city.html?city=${title}`;
   cards.appendChild(card);
   

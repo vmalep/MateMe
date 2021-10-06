@@ -29,7 +29,20 @@
 /* end of the  background picture, branding intro and search box CSS of the index*/
 
 /* Start of the CSS for the city cards */
-.cards {
+
+#city-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.city-section-title{
+  /* margin: 10%; */
+  margin-top: 10%;
+  font-size: 200%;
+}
+
+.city-cards{
   margin-top: 10px;
   display: flex;
   justify-content: center;
@@ -37,8 +50,8 @@
   align-items: center;
   justify-content: space-evenly;
 }
-.card {
-/*   border: 1px black solid; */
+.city-card {
+  visibility: visible;
   border-radius: 10px;
   max-width: 500px;
   width: 400px;
@@ -48,12 +61,28 @@
   align-items: center;
   justify-content: center;
   opacity: 1;
-  /* flex-direction: column;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  text-decoration: none; */
-/*   background-color: rgba(11, 102, 90, 0.5); */
   color: white;
   text-decoration: none;
+}
+
+.city-card-large {
+  visibility: hidden;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  color: white;
+  text-decoration: none;
+}
+
+.city-card-large {
+  visibility: visible;
+  width: 400px;
 }
 
 .card-title {
@@ -91,12 +120,29 @@
   width: 100%;
 } */
 
+@media screen and (min-width: 840px) {
+  .city-card-large {
+    visibility: visible;
+  }
+
+  .city-card {
+    visibility: hidden;
+  }
+}
+
 /* CSS code for the About Us section */
 .about-us-section {
+  display: flex;
+  flex-direction: column;
   margin: 10%;
   padding: 5%;
   border-radius: 10px;
   background-color: rgba(0, 5, 10, .5);
+}
+
+.about-us-section h2{
+  align-self: center;
+  margin-bottom: 10px;
 }
 
 .individual-card {
@@ -138,4 +184,4 @@
     padding: 7px 20px;
     font-size: 15px;
   }
-  } 
+}
