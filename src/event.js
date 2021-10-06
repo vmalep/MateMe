@@ -18,8 +18,29 @@ console.log(cityName + eventName);
 /* console.log(urlParams.get("event")); //returns US */
 /* console.log(urlParams.append("status", "true")); //returns ?q=losAngeles&country=US&status=true */
 
-/*
+// Join button
+const eventJoinButton = document.getElementById("event-join-btn");
 
+eventJoinButton.addEventListener("click", function() {
+      let countUser = document.getElementById("joined-counter");
+      let inputName = document.getElementById("member-name");
+      let inputMail = document.getElementById("member-email");
+      let number = countUser.innerHTML;
+      if (inputName && inputName.value && inputMail && inputMail.value) {
+        number++;
+        countUser.innerHTML = number;
+        alert("See you later alligator!");
+        inputName.value = "";
+        inputMail.value ="";
+      } 
+      else {
+        alert("Your mates wanna know ya name. Please enter and try again!")
+      }
+});
+
+
+
+/*
 // ALL .innerHTML
 
 // Title of Event     
