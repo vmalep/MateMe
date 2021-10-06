@@ -122,6 +122,7 @@
   .button-city:hover {
     background-color: green; /* Green */
     color:white;
+  }
   
   .card-img {
     border-radius: 0 10px 10px 0;
