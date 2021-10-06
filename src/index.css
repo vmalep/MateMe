@@ -41,6 +41,10 @@
   font-size: 200%;
 }
 
+.city-card-large {
+  display: none;
+}
+
 .city-cards{
   margin-top: 10px;
   display: flex;
@@ -49,6 +53,7 @@
   align-items: center;
   justify-content: space-evenly;
 }
+
 .city-card {
   border-radius: 10px;
   max-width: 500px;
@@ -65,8 +70,8 @@
 
 .card-title {
   margin: 10px;
-  font-size: 500%;
-}
+  font-size: 400%;
+  }
 
 .card-img {
   display: flex;
@@ -76,9 +81,51 @@
   background-size: cover;
   background-position: center;
   height: 400px;
-  width: 400%;
+  width: 400px;
   max-height: 100%;
   max-width: 100%;
+}
+
+@media screen and (min-width: 840px) {
+
+  .city-card{
+    display: none;
+  }
+
+  .city-card-large{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 5, 10, .5);
+    width: 800px;
+    color: white;
+  }
+
+  .city-card-text-large{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 1rem;
+  }
+
+  .button-city {
+    margin-bottom: 10px;
+    border-radius: 8px;
+    padding: 10px 60px;
+    font-size: 17px;
+    border: 1px black solid;
+    background-color: white;
+  }
+
+  .button-city:hover {
+    background-color: green; /* Green */
+    color:white;
+  
+  .card-img {
+    border-radius: 0 10px 10px 0;
+  }
 }
 
 /* CSS code for the About Us section */
@@ -93,7 +140,7 @@
 
 .about-us-section h2{
   align-self: center;
-  margin-bottom: 15px;
+  margin-bottom: 2rem;
   font-size: clamp(1rem, 0.7153rem + 2vw, 4rem);
 }
 
