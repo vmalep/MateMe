@@ -1,39 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+    <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
-    <link rel="stylesheet" href="src/city.css" />
+    <link rel="stylesheet" href="src/event.css" />
     <link rel="stylesheet" href="src/header.css" />
     <link rel="stylesheet" href="src/footer.css" />
 
-    <title>MateMe</title>
-
-<!--     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    /> -->
-
-    <!-- Déclaration of the global variables and initialisation of them (see: https://www.py4u.net/discuss/275309)-->
-    <script type='text/javascript' >
-      let cityList = [];
-      let eventList = [];
-    </script>
-    <script type="text/javascript" src="src/globalVar.js"></script>
   </head>
 
-  <!-- Start of the body part -->
-  <body>
-    <header id="navBar-header" class="nav-header">
+  <body class="event-body">
+    <header id="navBar-header">
       <img
         id="avatar"
         src="https://images.unsplash.com/photo-1540331547168-8b63109225b7"
@@ -59,12 +38,52 @@
       </nav>
     </header>
 
-    <h2 class="city-h2">Boarding game!</h2>
-    <!--Josh: to center events-->
-    <p class="display-event-description">
-        Join us at the boardgames night at Cocon Ludique!
-      </p>
-    <script type="text/javascript" src="src/city.js"></script>
-    <script type="text/javascript" src="src/header.js"></script>
+    <main id="event-page-frame">
+
+      <section id="event-info">
+        <div class="event-ground-settings top-info">
+          <h4 class="event-title">
+            Boardgames Night!
+          </h4>
+        </div>
+
+        <div class="event-ground-settings event-description">
+          <p class="display-event-description">
+            Join us at the boardgames night at Cocon Ludique! Lorem ipsum dolor sit amet consectetur adipisicing elit. In laudantium dolor ab quas, facilis perspiciatis molestiae unde nam velit corporis dolores aliquam ratione accusantium laboriosam blanditiis rem incidunt magni voluptate?
+          </p>
+        </div>
+
+        <div class="event-ground-settings event-time">
+          <h4 class="where-when">Date:</h4>
+
+          <div id="event-date-input" class="event-ground-settings event-when-where-box">
+            Octorber 26th 2021 / Tuesday
+          </div>
+        </div>
+
+        <div class="event-ground-settings event-location">
+          <h4 class="where-when">Where?</h4>
+
+          <div id="event-location-input" class="event-ground-settings event-when-where-box">
+            LE NID - Cocon Ludique
+        </div>
+      </div>
+        <section id="event-map">
+
+        </section>
+
+        <section id="join-section" class="event-ground-settings">
+          <div id="joined-and-join">Group size: <span id="joined-counter">6</span></div>
+          <button id="event-join-btn" class="event-ground-settings">
+            Join Us
+          </button>
+        </section>
+      </section>
+
+     
+    </main>
+
+    <script src="src/event.js"></script>
+    <script src="src/header.js"></script>
   </body>
 </html>
