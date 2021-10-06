@@ -128,6 +128,21 @@
   .city-card {
     visibility: hidden;
   }
+
+  .card-title {
+    margin: 10px;
+    font-size: 500%;
+    color:black;
+  }
+  .card-img-large {
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 600%;
+    max-height: 100%;
+    max-width: 100%;
+  }
 }
 
 /* CSS code for the About Us section */
