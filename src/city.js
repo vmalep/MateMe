@@ -23,11 +23,9 @@ cityH2.innerHTML = cityName;
 
 const eventListDiv = document.getElementById("event-list");
 
-function createMobileCard(name, placeName, placeURL, dateAndTime, eventId) {
+function createMobileCard(eventI) {
 
-  /* const [name, placeName, placeURL, dateAndTime, eventId] = eventData; */
-
-  console.log("event name: " + name);
+  const {name, placeName, placeURL, dateAndTime, eventId} = eventI;
 
   /* Creation of the mobile first city card */
   const event1 = document.createElement("section");
@@ -94,6 +92,6 @@ function createMobileCard(name, placeName, placeURL, dateAndTime, eventId) {
 }
 
 for (let i = 0; i < eventData.length; i++) {
-  createMobileCard(eventData[i].name, eventData[i].placeName, eventData[i].placeURL, eventData[i].dateAndTime, eventData[i].eventId);
+  createMobileCard(eventData[i]);
   console.log("Adding " + eventData[i].name);
 }
