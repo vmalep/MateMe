@@ -73,7 +73,6 @@
   justify-content: flex-start;
   align-items: space-between;
   flex-direction: column;
-  flex-grow: 1;
   max-width: 192px; /* Pierre: added to have all the boxes the same size */
 }
 
@@ -83,7 +82,16 @@
   flex-direction: column;
   padding-left: 50px;
   padding-top: 5px;
-  flex-grow: 1;
+  max-width: 192px;
+}
+
+.div-date{
+  display:flex;
+  align-items: baseline;
+}
+
+.fa{
+  margin-right: 5px;
 }
 
 .buttonevent1 {

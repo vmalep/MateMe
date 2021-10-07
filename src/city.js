@@ -47,14 +47,15 @@ function createMobileCard(name, placeName, placeURL, dateAndTime, eventId) {
   part1.appendChild(div3);
 
   const where1 = document.createElement("span");
-  part1.classList.add("where1");
+  where1.classList.add("where1");
+  div3.appendChild(where1);
+
 
   const fa1 = document.createElement("i");
   fa1.style.fontSize = "24px";
   fa1.classList.add("fa");
   fa1.innerHTML = "&#xf041;";
   where1.appendChild(fa1);
-
 
   const aCity = document.createElement("a");
   aCity.classList.add("a-city");
@@ -75,15 +76,20 @@ function createMobileCard(name, placeName, placeURL, dateAndTime, eventId) {
   buttonEvent1.innerHTML = "Join!";
   anchorEvent.appendChild(buttonEvent1);
 
+  const divDate= document.createElement("div");
+  divDate.classList.add("div-date");
+  part2.appendChild(divDate);
+
   const fa2 = document.createElement("i");
   fa2.style.fontSize = "24px";
   fa2.classList.add("fa");
   fa2.innerHTML = "&#xf274;";
-  where1.appendChild(fa2);
-
+  divDate.appendChild(fa2);
+  
   const pDate = document.createElement("p");
   pDate.innerHTML = dateAndTime;
-  part2.appendChild(pDate);
+  divDate.appendChild(pDate);
+  
 
 }
 
