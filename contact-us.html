@@ -9,10 +9,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="src/style.css" />
     <link rel="stylesheet" href="src/createevent.css" />
+    <link rel="stylesheet" href="src/contact-us.css" />
     <link rel="stylesheet" href="src/header.css" />
     <link rel="stylesheet" href="src/footer.css" />
 
-    <title>MateMe</title>
+    <title>MateMe - Contact us</title>
 
       <!-- Déclaration of the global variables and initialisation of them (see: https://www.py4u.net/discuss/275309)-->
   <script type='text/javascript'>
@@ -22,7 +23,7 @@
   <script type="text/javascript" src="src/globalVar.js"></script> 
 
   </head>
-  <section id="createeventbody">
+  <section id="contact-us-body">
 <body>
   <header id="navBar-header">
     <img
@@ -44,52 +45,40 @@
           <a href="createevent.html" class="nav-link-header">Create events</a>
         </li>
         <li class="menu-list">
-          <a href="contact-us.html" class="nav-link-header">Contact</a>
+          <a href="#" class="nav-link-header">Contact</a>
         </li>
       </ul>
     </nav>
   </header>
-  <h2 class="createeventh2">Create your event</h2>
+
+  <h2 class="createeventh2">Hy mate, what's up?</h2>
   <form class="formcreateevent">
     <label for="firstName"><span class="createeventlabel">What's your name?</span></label><br />
     <input
       type="text"
-      id="createeventname"
+      id="contact-us-name"
       name="name"
       placeholder="Tell us your name"
     /><br />
-    <label for="city"><span class="createeventlabel">Select a city from the list</span></label><br />
+    <label for="firstName"><span class="createeventlabel">Your email</span></label><br />
     <input
       type="text"
-      id="createeventcity"
-      name="city"
-      placeholder= "City of the event"
-      list= "cities"
-    />
-    <datalist id="cities">
-      <option>Paris</option>
-  <option>Barcelona</option>
-  <option>Berlin</option>
-</datalist>
-    <br />
-    <label for="date"><span class="createeventlabel">Select a date</span></label><br />
-    <input
-      type="date"
-      id="createeventdate"
-      name="date"
-      placeholder="Pick a date"
+      id="contact-us-email"
+      name="email"
+      placeholder="login@server.com"
     /><br />
-    <label for="message"><span class="createeventlabel">Tell us about the event</span></label><br />
-    <textarea id="messagecreateevent" name="message" onfocus="this.value=''">Info about the event</textarea><br />
+    <label for="message"><span class="createeventlabel">What do you want to tell us?</span></label><br />
+    <textarea id="contact-us-msg" name="message" onfocus="this.value=''">Blablabla</textarea><br />
     <input id="button" type="submit" value="Submit" />
   </form>
 </section>
-<footer>
-  <a href="contact-us.html">Contact us</a>
-  <p>Copyright &copy; 2021 WCD. All right reserved</p>
-</footer>
 
-  <script src="src/createevent.js"></script>
+<footer>
+    <a href="contact-us.html">Contact us</a>
+    <p>Copyright &copy; 2021 WCD. All right reserved</p>
+  </footer>
+
+  <script src="src/contact-us.js"></script>
   <script src="src/header.js"></script>
 </body>
 </html>

@@ -1,0 +1,10 @@
+#contact-us-body {
+    background-image: url("../img/istockphoto-490825914-612x612.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    object-fit: cover;
+    height: 100%;
+  
+  }
