@@ -74,7 +74,7 @@
 
 .card-title {
   margin: 10px;
-  font-size: 390%;
+  font-size: 300%;
   }
 
 .card-img {
@@ -202,10 +202,6 @@
 /* Josh design */
   .circular-portrait {
     align-items: center;
-  }
-  
-  .profile-img {
-    
   }
 }
 
