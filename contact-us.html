@@ -1,85 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="src/style.css" />
-    <link rel="stylesheet" href="src/createevent.css" />
-    <link rel="stylesheet" href="src/contact-us.css" />
-    <link rel="stylesheet" href="src/header.css" />
-    <link rel="stylesheet" href="src/footer.css" />
 
-    <title>MateMe - Contact us</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="src/style.css" />
+  <link rel="stylesheet" href="src/createevent.css" />
+  <link rel="stylesheet" href="src/contact-us.css" />
+  <link rel="stylesheet" href="src/header.css" />
+  <link rel="stylesheet" href="src/footer.css" />
 
-      <!-- Déclaration of the global variables and initialisation of them (see: https://www.py4u.net/discuss/275309)-->
+  <title>MateMe - Contact us</title>
+
+  <!-- Déclaration of the global variables and initialisation of them (see: https://www.py4u.net/discuss/275309)-->
   <script type='text/javascript'>
     let cityList = [];
     let eventList = [];
   </script>
-  <script type="text/javascript" src="src/globalVar.js"></script> 
+  <script type="text/javascript" src="src/globalVar.js"></script>
 
-  </head>
-  <section id="contact-us-body">
+</head>
+
 <body>
-  <header id="navBar-header">
-    <img
-      id="avatar"
-      src="https://images.unsplash.com/photo-1540331547168-8b63109225b7"
-    />
 
-    <div class="brandName">
-      <a href="index.html">MateMe</a>
+  <div id="page-container">
+    <!-- Suggested here to keep the footer at the bottom -->
+    <div id="content-wrap">
+      
+      <header id="navBar-header">
+        <img id="avatar" src="https://images.unsplash.com/photo-1540331547168-8b63109225b7" />
+
+        <div class="brandName">
+          <a href="index.html">MateMe</a>
+        </div>
+
+        <nav id="dropdown-menu">
+          <button id="menu-btn">≡</button>
+          <ul id="menu" class="menu-off">
+            <li class="menu-list">
+              <a href="index.html" class="nav-link-header">Home</a>
+            </li>
+            <li class="menu-list">
+              <a href="createevent.html" class="nav-link-header">Create events</a>
+            </li>
+            <li class="menu-list">
+              <a href="#" class="nav-link-header">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="contact-us-body">
+        <h2 class="createeventh2">Hy mate, what's up?</h2>
+        <form class="formcreateevent">
+          <label for="firstName"><span class="createeventlabel">What's your name?</span></label><br />
+          <input type="text" id="contact-us-name" name="name" placeholder="Tell us your name" /><br />
+          <label for="firstName"><span class="createeventlabel">Your email</span></label><br />
+          <input type="text" id="contact-us-email" name="email" placeholder="login@server.com" /><br />
+          <label for="message"><span class="createeventlabel">What do you want to tell us?</span></label><br />
+          <textarea id="contact-us-msg" name="message" onfocus="this.value=''">Blablabla</textarea><br />
+          <input id="button" type="submit" value="Submit" />
+        </form>
+      </section>
+
+      <footer>
+        <a href="contact-us.html">Contact us</a>
+        <p>Copyright &copy; 2021 WCD. All right reserved</p>
+      </footer>
     </div>
-
-    <nav id="dropdown-menu">
-      <button id="menu-btn">≡</button>
-      <ul id="menu" class="menu-off">
-        <li class="menu-list">
-          <a href="index.html" class="nav-link-header">Home</a>
-        </li>
-        <li class="menu-list">
-          <a href="createevent.html" class="nav-link-header">Create events</a>
-        </li>
-        <li class="menu-list">
-          <a href="#" class="nav-link-header">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <h2 class="createeventh2">Hy mate, what's up?</h2>
-  <form class="formcreateevent">
-    <label for="firstName"><span class="createeventlabel">What's your name?</span></label><br />
-    <input
-      type="text"
-      id="contact-us-name"
-      name="name"
-      placeholder="Tell us your name"
-    /><br />
-    <label for="firstName"><span class="createeventlabel">Your email</span></label><br />
-    <input
-      type="text"
-      id="contact-us-email"
-      name="email"
-      placeholder="login@server.com"
-    /><br />
-    <label for="message"><span class="createeventlabel">What do you want to tell us?</span></label><br />
-    <textarea id="contact-us-msg" name="message" onfocus="this.value=''">Blablabla</textarea><br />
-    <input id="button" type="submit" value="Submit" />
-  </form>
-</section>
-
-<footer>
-    <a href="contact-us.html">Contact us</a>
-    <p>Copyright &copy; 2021 WCD. All right reserved</p>
-  </footer>
-
+  </div>
   <script src="src/contact-us.js"></script>
   <script src="src/header.js"></script>
 </body>
-</html>
 
+</html>
