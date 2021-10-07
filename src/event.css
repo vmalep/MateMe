@@ -9,6 +9,7 @@
 /***************creates space between header and first element on page************/
 #event-page-frame {
   padding-top: 90px;
+  margin-bottom: 54px;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -107,13 +108,23 @@
 
 /************************Join-Button and Group size properties*******************/
 #event-join-btn {
-  background-color: rgba(0, 128, 0, .7);
-  box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  border-radius: 5px;
-  border: darkgreen solid 1px;
-  width: 25vw;
-  max-width: 100px;
+  background-color: rgba(255, 255, 255, .6);
+  border-radius: 8px;
+  border: black solid 1px;
+  height: 100%;
+  width: 100%;
+  max-width: 150px;
   padding: 5px;
+  color: black;
+  text-shadow: none;
+  font-size: 20px;
+  margin: 0;
+  padding: 10px 30px;
+}
+
+#event-join-btn:hover {
+  background-color: green; /* Green */
+  color:white;
 }
 
 #join-section {
@@ -128,7 +139,7 @@
 /******************MEDIA QUERY***************************/
 @media screen and (min-width: 860px) {
   #event-page-frame {
-    padding-top: 15%;
+    padding-top: 90px;
   }
 
   #event-info {
