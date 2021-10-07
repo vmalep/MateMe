@@ -9,6 +9,7 @@
 /***************creates space between header and first element on page************/
 #event-page-frame {
   padding-top: 90px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -128,7 +129,7 @@
 /******************MEDIA QUERY***************************/
 @media screen and (min-width: 860px) {
   #event-page-frame {
-    padding-top: 15%;
+    padding-top: 5%;
   }
 
   #event-info {
