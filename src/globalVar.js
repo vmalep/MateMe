@@ -49,7 +49,7 @@ eventList = [
   },
   {
     city: "Paris",
-    name: "Organic food",
+    name: "Organic food, Vegies and Fruits",
     placeName: "Supernature",
     placeURL: "https://en.parisinfo.com/paris-restaurant/70956/Supernature",
     dateAndTime: "03.10.2021 / 6pm", /* For the moment, a simple string. Could be improve with date format */
@@ -59,7 +59,7 @@ eventList = [
   },
   {
     city: "Barcelona",
-    name: "El Arrebato",
+    name: "El Arrebato / Tapas night!",
     placeName: "Barts Club",
     placeURL: "https://www.barcelona-metropolitan.com/events/el-arrebato/?occ_dtstart=2021-10-03T19:30",
     dateAndTime: "07.11.2021 / 7:30pm", /* For the moment, a simple string. Could be improve with date format */
@@ -120,7 +120,7 @@ eventList = [
   {
     city: "Berlin",
     name: "Computer games museum",
-    placeName: "Computerspielemuseum",
+    placeName: "Museum",
     placeURL: "https://www.computerspielemuseum.de",
     dateAndTime: "13.10.2021 / 6:30pm", /* For the moment, a simple string. Could be improve with date format */
     briefDescr: "The first computer game museum in the world was founded here in Berlin. An iconic time trip for the whole family through 60 years of history of the games can start.",
@@ -129,8 +129,8 @@ eventList = [
   },
   {
     city: "Berlin",
-    name: "Beer gardens",
-    placeName: "Tiergarten park",
+    name: "Berliner Tierpark",
+    placeName: "Tierpark",
     placeURL: "https://www.visitberlin.de/en/tiergarten",
     dateAndTime: "20.11.2021 / 4pm", /* For the moment, a simple string. Could be improve with date format */
     briefDescr: "Shaded gems by the water or popular meeting places in the neighbourhood.",
