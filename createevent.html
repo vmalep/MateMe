@@ -1,96 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="src/style.css" />
-    <link rel="stylesheet" href="src/createevent.css" />
-    <link rel="stylesheet" href="src/header.css" />
-    <link rel="stylesheet" href="src/footer.css" />
 
-    <title>MateMe</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="src/style.css" />
+  <link rel="stylesheet" href="src/createevent.css" />
+  <link rel="stylesheet" href="src/header.css" />
+  <link rel="stylesheet" href="src/footer.css" />
 
-      <!-- Déclaration of the global variables and initialisation of them (see: https://www.py4u.net/discuss/275309)-->
+  <title>MateMe</title>
+
+  <!-- Déclaration of the global variables and initialisation of them (see: https://www.py4u.net/discuss/275309)-->
   <script type='text/javascript'>
     let cityList = [];
     let eventList = [];
   </script>
-  <script type="text/javascript" src="src/globalVar.js"></script> 
+  <script type="text/javascript" src="src/globalVar.js"></script>
 
-  </head>
-  <section id="createeventbody">
+</head>
+
 <body>
-  <header id="navBar-header">
-    <img
-      id="avatar"
-      src="https://images.unsplash.com/photo-1540331547168-8b63109225b7"
-    />
+  <div id="page-container">
+    <!-- Suggested here to keep the footer at the bottom -->
+    <div id="content-wrap">
 
-    <div class="brandName">
-      <a href="index.html">MateMe</a>
+      <header id="navBar-header">
+        <img id="avatar" src="https://images.unsplash.com/photo-1540331547168-8b63109225b7" />
+
+        <div class="brandName">
+          <a href="index.html">MateMe</a>
+        </div>
+
+        <nav id="dropdown-menu">
+          <button id="menu-btn">≡</button>
+          <ul id="menu" class="menu-off">
+            <li class="menu-list">
+              <a href="index.html" class="nav-link-header">Home</a>
+            </li>
+            <li class="menu-list">
+              <a href="createevent.html" class="nav-link-header">Create events</a>
+            </li>
+            <li class="menu-list">
+              <a href="contact-us.html" class="nav-link-header">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section id="createeventbody">
+        <h2 class="createeventh2">Create your event</h2>
+        <form class="formcreateevent">
+          <label for="firstName"><span class="createeventlabel">What's your name?</span></label><br />
+          <input type="text" id="createeventname" name="name" placeholder="Tell us your name" /><br />
+          <label for="city"><span class="createeventlabel">Select a city from the list</span></label><br />
+          <input type="text" id="createeventcity" name="city" placeholder="City of the event" list="cities" />
+          <datalist id="cities">
+            <option>Paris</option>
+            <option>Barcelona</option>
+            <option>Berlin</option>
+          </datalist>
+          <br />
+          <label for="date"><span class="createeventlabel">Select a date</span></label><br />
+          <input type="date" id="createeventdate" name="date" placeholder="Pick a date" /><br />
+          <label for="message"><span class="createeventlabel">Tell us about the event</span></label><br />
+          <textarea id="messagecreateevent" name="message" onfocus="this.value=''">Info about the event</textarea><br />
+          <input id="button" type="submit" value="Submit" />
+        </form>
+      </section>
+      <footer>
+        <a href="contact-us.html">Contact us</a>
+        <p>Copyright &copy; 2021 WCD. All right reserved</p>
+      </footer>
     </div>
-
-    <nav id="dropdown-menu">
-      <button id="menu-btn">≡</button>
-      <ul id="menu" class="menu-off">
-        <li class="menu-list">
-          <a href="index.html" class="nav-link-header">Home</a>
-        </li>
-        <li class="menu-list">
-          <a href="createevent.html" class="nav-link-header">Create events</a>
-        </li>
-        <li class="menu-list">
-          <a href="contact-us.html" class="nav-link-header">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <h2 class="createeventh2">Create your event</h2>
-  <form class="formcreateevent">
-    <label for="firstName"><span class="createeventlabel">What's your name?</span></label><br />
-    <input
-      type="text"
-      id="createeventname"
-      name="name"
-      placeholder="Tell us your name"
-    /><br />
-    <label for="city"><span class="createeventlabel">Select a city from the list</span></label><br />
-    <input
-      type="text"
-      id="createeventcity"
-      name="city"
-      placeholder= "City of the event"
-      list= "cities"
-    />
-    <datalist id="cities">
-      <option>Paris</option>
-  <option>Barcelona</option>
-  <option>Berlin</option>
-</datalist>
-    <br />
-    <label for="date"><span class="createeventlabel">Select a date</span></label><br />
-    <input
-      type="date"
-      id="createeventdate"
-      name="date"
-      placeholder="Pick a date"
-    /><br />
-    <label for="message"><span class="createeventlabel">Tell us about the event</span></label><br />
-    <textarea id="messagecreateevent" name="message" onfocus="this.value=''">Info about the event</textarea><br />
-    <input id="button" type="submit" value="Submit" />
-  </form>
-</section>
-<footer>
-  <a href="contact-us.html">Contact us</a>
-  <p>Copyright &copy; 2021 WCD. All right reserved</p>
-</footer>
-
+  </div>
   <script src="src/createevent.js"></script>
   <script src="src/header.js"></script>
 </body>
-</html>
 
+</html>
