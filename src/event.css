@@ -32,39 +32,82 @@
   margin: 15px;
   color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    font-size: 15px;
+    font-size: 20px;
 }
 /********************************************************************************/
 
 
-/****************Title and headers for 'Date:' and 'Where?'***********************/
-.event-title {
-  font-size: 30px;
+/***************************Title and Creator paragraph*******************************************/
+.top-info {
+  display: block;
+  width: 100%;
 }
 
+.event-title {
+  font-size: 35px;
+  margin-top: 30px;;
+  
+}
+
+.top-line {
+  font-size: 20px;
+  text-align: left;
+  margin-left: 15px;
+}
+/********************************************************************************/
+
+
+/****************headers for 'Date:' and 'Where?'*********************************/
 .where-when {
   width: 60vw;
   max-width: 300px;
   text-align: left;
 }
-/********************************************************************************/
-
-
 /************************Date and Location input*********************************/
 .event-when-where-box {
   border: solid .5px white;
   box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   border-radius: 5px;
   height: auto;
-  width: 220px;
+  width: 225px;
   padding: 5px;
+}
+/********************************************************************************/
+
+
+/*************************   Google Maps    *************************************/
+#gMap {
+  width: 100%;
+  margin: 20px 0;
+}
+/********************************************************************************/
+
+
+/************************   Name and email   ************************************/
+#log-to-event {
+  display: flex;
+  align-items: center;
+  flex-flow: wrap column;
+  width: 100%;
+  height: auto;
+}
+
+.event-page-input {
+  padding: 5px 2.5px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: rgba(0, 5, 10, .5);
+  color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 20px;
+  width: 75%;
 }
 /********************************************************************************/
 
 
 /************************Join-Button and Group size properties*******************/
 #event-join-btn {
-  background-color: green;
+  background-color: rgba(0, 128, 0, .7);
   box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   border-radius: 5px;
   border: darkgreen solid 1px;
@@ -83,7 +126,7 @@
 
  
 /******************MEDIA QUERY***************************/
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 860px) {
   #event-page-frame {
     padding-top: 15%;
   }
@@ -106,16 +149,30 @@
 
   .event-when-where-box {
     padding: 15px;
-    width: 20vw;
+    width: 40vw;
+    max-width: 390px
   }
 
   #join-section {
     display: flex;
     justify-content: space-between;
-    width: 20vw;
+    width: 40vw;
+    max-width: 390px
+  }
+
+  #gMap {
+    width: 500px;
+    height: 300px;
+  }
+
+  #log-to-event {
+    width: 400px;
+    
+  }
+
+  .event-page-input {
+    width: 350px;
+    padding: 15px 10px;
   }
   
 }
-=======
-} */
->>>>>>> 14248f571b5afe32f12b87eea14ae03c2655f18f

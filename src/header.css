@@ -25,6 +25,7 @@
   align-self: center;
 }
 .brandName {
+  display: flex;
   align-self: center;
 }
 .brandName a {
@@ -35,12 +36,13 @@
   font-weight: bold;
 }
 
-nav {
+#dropdown-menu {
   display: block;
   margin: 0;
-  padding: 0;
-  width: 10%;
+  padding-left: 0;
   text-align: end;
+  padding-inline-start: 0;
+  width: 42px;
 }
 /*****************************************/
 
@@ -48,17 +50,20 @@ nav {
 #menu-btn {
   font-size: clamp(50px, 100%, 350%);
   height: 100%;
-  background-color: rgb(167, 157, 157);
+  background-color: rgba(62, 70, 61, 0);
   border: none;
   border-radius: 5px;
-  margin-left: -30px;
 }
 /**************************************/
 
 /*************Menu & toggle settings************/
 #menu {
   margin-top: 0;
-  padding: 30px;
+  margin-right: 10px;
+  padding: 0;
+  margin-left: clamp(-150px, -35%, -150px);
+  width: 480%;
+  max-width: 200px;
 }
 
 .menu-off {
@@ -66,11 +71,10 @@ nav {
   display: flex;
   flex-flow: wrap column;
   border: none;
-  border-radius: 5px;
-  background-color: rgba(0, 0, 10, 0.5);
+  border-radius: 15px;
+  background-color: rgba(0, 0, 10, 0.9);
   position: relative;
   text-align: center;
-  margin-left: -250px;
 }
 
 .menu-on {
@@ -79,16 +83,26 @@ nav {
 
 .menu-list {
   list-style: none;
-  margin: 10px;
+  padding: 10px 0;
 }
 
 .nav-link-header {
   text-decoration: none;
   color: white;
   margin-right: 20px;
-  font-size: 300%;
+  font-size: 250%;
 }
 
 .nav-link-header:hover {
   color: rgb(243, 161, 9);
+}
+
+.menu-list:hover {
+  background-color: rgba(167, 157, 157, .5);
+}
+
+@media screen and  (min-width: 900px) {
+  #menu {
+    margin-left: clamp(-75px, -60px, -75px)
+  }
 }
