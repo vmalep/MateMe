@@ -11,7 +11,7 @@
 
 /* To be replaced by JS so the background image is the one of the selected town */
 .city-body{
-  background-image: url("../img/torre-eiffel-3.jpg");
+  /* background-image: url("../img/torre-eiffel-3.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -73,6 +73,7 @@
   justify-content: flex-start;
   align-items: space-between;
   flex-direction: column;
+  max-width: 192px; /* Pierre: added to have all the boxes the same size */
 }
 
 .part2 {
@@ -81,6 +82,16 @@
   flex-direction: column;
   padding-left: 50px;
   padding-top: 5px;
+  max-width: 192px;
+}
+
+.div-date{
+  display:flex;
+  align-items: baseline;
+}
+
+.fa{
+  margin-right: 5px;
 }
 
 .buttonevent1 {
