@@ -1,4 +1,8 @@
 /* DON'T TOUCH! here start the css of the background picture, branding intro and search box of the index*/
+#index-body {
+  background-color: rgba(0, 5, 10, 0.2);
+}
+
 
 .search-box-div {
   padding: 7em 5px;
@@ -70,7 +74,7 @@
 
 .card-title {
   margin: 10px;
-  font-size: 400%;
+  font-size: 390%;
   }
 
 .card-img {
@@ -136,7 +140,7 @@
   margin: 5% 10%;
   padding: 5%;
   border-radius: 10px;
-  background-color: rgba(0, 5, 10, 0.63);
+  background-color: rgba(65, 113, 160, 0.3);
 }
 
 .about-us-section h2{
@@ -146,13 +150,13 @@
 }
 
 .individual-card {
+  margin: 20px 0;
   display: flex;
   flex-direction: row;
-  margin: 20px 0;
 }
 
 .circular-portrait {
-  position: relative;
+  /*position: relative;*/
   overflow: hidden;
   border-radius: 50%;
   min-width: 60px;
@@ -166,6 +170,8 @@
   height: 100%;
   object-fit: cover;
 }
+
+
 
 /* DON'T TOUCH! media queries of the background picture, branding intro and search box of index*/
 @media screen and (max-width: 700px) { 
@@ -184,4 +190,22 @@
     padding: 7px 20px;
     font-size: 15px;
   }
+
+  .individual-card {
+    display: block;
+    text-align: center;
+  }
+
+  .about-us-section {
+    text-align: center;
+  }
+/* Josh design */
+  .circular-portrait {
+    align-items: center;
+  }
+  
+  .profile-img {
+    
+  }
 }
+
