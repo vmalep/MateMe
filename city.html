@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="city-html-body">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -33,6 +33,8 @@
     /> -->
 
     <!-- Déclaration of the global variables and initialisation of them (see: https://www.py4u.net/discuss/275309)-->
+    
+    
     <script type='text/javascript' >
       let cityList = [];
       let eventList = [];
@@ -41,7 +43,8 @@
   </head>
 
   <!-- Start of the body part -->
-  <body class="city-body">
+  <body class="city-body city-html-body">
+   <div class="container"> 
     <header id="navBar-header" class="nav-header">
       <img
         id="avatar"
@@ -69,9 +72,10 @@
     </header>
 
     <h2 class="city-h2">Paris</h2>
-    <!--Josh: to center events-->
-    <div id="event-list">
 
+    <!--Josh: to center events-->
+
+    <div id="event-list">
       <section class="event1">
         <div class="part1">
           <h3 class="city-h3">Boardgame night</h3>
@@ -84,6 +88,7 @@
             </span>
           </div>
         </div>
+        
         <div class="part2">
           <a href="event.html"><button class="buttonevent1">Join!</button></a>
           <p class="date">
@@ -91,12 +96,13 @@
           </p>
         </div>
       </section>
-
     </div>
+  </div>
     <footer>
-      <a href="contact-us.html">Contact us</a>
-      <p>Copyright &copy; 2021 WCD. All right reserved</p>
+      <a href="contact-us.html" class="contact-footer">Contact us</a>
+      <p class="copyright">Copyright &copy; 2021 WCD. All right reserved</p>
     </footer>
+
     <script type="text/javascript" src="src/city.js"></script>
     <script type="text/javascript" src="src/header.js"></script>
   </body>

@@ -12,82 +12,87 @@
   </head>
 
   <body class="event-body">
-    <header id="navBar-header">
-      <img
-        id="avatar"
-        src="https://images.unsplash.com/photo-1540331547168-8b63109225b7" alt="The eifel tower"
-      />
+    <div class="container">
+      <header id="navBar-header">
+        <img
+          id="avatar"
+          src="https://images.unsplash.com/photo-1540331547168-8b63109225b7" alt="The eifel tower"
+        />
 
-      <div class="brandName">
-        <a href="index.html">MateMe</a>
-      </div>
-
-      <nav id="dropdown-menu">
-        <button id="menu-btn">≡</button>
-        <ul id="menu" class="menu-off">
-          <li class="menu-list">
-            <a href="index.html" class="nav-link-header">Home</a>
-          </li>
-          <li class="menu-list">
-            <a href="createevent.html" class="nav-link-header">Create events</a>
-          </li>
-          <li class="menu-list">
-            <a href="contact-us.html" class="nav-link-header">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <main id="event-page-frame">
-
-      <section id="event-info">
-        <div class="event-ground-settings top-info">
-          <p id="created-from" class="top-line">Created from: <span id="creator-of-event">Jane</span></p>
-          <h4 class="event-title">
-            Boardgames Night!
-          </h4>
+        <div class="brandName">
+          <a href="index.html">MateMe</a>
         </div>
 
-        <div class="event-ground-settings event-description">
-          <p class="display-event-description">
-            Join us at the boardgames night at Cocon Ludique! Lorem ipsum dolor sit amet consectetur adipisicing elit. In laudantium dolor ab quas, facilis perspiciatis molestiae unde nam velit corporis dolores aliquam ratione accusantium laboriosam blanditiis rem incidunt magni voluptate?
-          </p>
-        </div>
+        <nav id="dropdown-menu">
+          <button id="menu-btn">≡</button>
+          <ul id="menu" class="menu-off">
+            <li class="menu-list">
+              <a href="index.html" class="nav-link-header">Home</a>
+            </li>
+            <li class="menu-list">
+              <a href="createevent.html" class="nav-link-header">Create events</a>
+            </li>
+            <li class="menu-list">
+              <a href="contact-us.html" class="nav-link-header">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-        <div class="event-ground-settings event-time">
-          <h4 class="where-when">Date:</h4>
+      <main id="event-page-frame">
 
-          <div id="event-date-input" class="event-ground-settings event-when-where-box">
-            Octorber 26th 2021 / Tuesday
+        <section id="event-info">
+          <div class="event-ground-settings top-info">
+            <p id="created-from" class="top-line">Created from: <span id="creator-of-event">Jane</span></p>
+            <h4 class="event-title">
+              Boardgames Night!
+            </h4>
+          </div>
+
+          <div class="event-ground-settings event-description">
+            <p class="display-event-description">
+              Join us at the boardgames night at Cocon Ludique! Lorem ipsum dolor sit amet consectetur adipisicing elit. In laudantium dolor ab quas, facilis perspiciatis molestiae unde nam velit corporis dolores aliquam ratione accusantium laboriosam blanditiis rem incidunt magni voluptate?
+            </p>
+          </div>
+
+          <div class="event-ground-settings event-time">
+            <h4 class="where-when">Date:</h4>
+
+            <div id="event-date-input" class="event-ground-settings event-when-where-box">
+              Octorber 26th 2021 / Tuesday
+            </div>
+          </div>
+
+          <div class="event-ground-settings event-location">
+            <h4 class="where-when">Where?</h4>
+
+            <div id="event-location-input" class="event-ground-settings event-when-where-box">
+              LE NID - Cocon Ludique
           </div>
         </div>
+          <section id="event-map">
+            <iframe id="gMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.6730646716437!2d2.3530556!3d48.8644444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1a44c40327%3A0xf56b76b99325dd3b!2sLE%20NID%20-%20Cocon%20Ludique!5e0!3m2!1sen!2sde!4v1633531036545!5m2!1sen!2sde" allowfullscreen="" loading="lazy"></iframe>
+          </section>
 
-        <div class="event-ground-settings event-location">
-          <h4 class="where-when">Where?</h4>
+          <form id="log-to-event">
+            <input id="member-name" class="member-name-class event-page-input" type="text" value="" placeholder="Please enter your name...">
+            <input id="member-email" class="member-email-class event-page-input" type="email" value="" placeholder="Please enter your email...">
+          </form>
 
-          <div id="event-location-input" class="event-ground-settings event-when-where-box">
-            LE NID - Cocon Ludique
-        </div>
-      </div>
-        <section id="event-map">
-          <iframe id="gMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.6730646716437!2d2.3530556!3d48.8644444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1a44c40327%3A0xf56b76b99325dd3b!2sLE%20NID%20-%20Cocon%20Ludique!5e0!3m2!1sen!2sde!4v1633531036545!5m2!1sen!2sde" allowfullscreen="" loading="lazy"></iframe>
-        </section>
-
-        <form id="log-to-event">
-          <input id="member-name" class="member-name-class event-page-input" type="text" value="" placeholder="Please enter your name...">
-          <input id="member-email" class="member-email-class event-page-input" type="email" value="" placeholder="Please enter your email...">
-        </form>
-
-        <section id="join-section" class="event-ground-settings">
-          <div id="joined-and-join">Group size: <span id="joined-counter">1</span></div>
-          <button id="event-join-btn" class="event-ground-settings">
-            Join Us
-          </button>
-        </section>
-      </section>
-
-     
-    </main>
+          <section id="join-section" class="event-ground-settings">
+            <div id="joined-and-join">Group size: <span id="joined-counter">1</span></div>
+            <button id="event-join-btn" class="event-ground-settings">
+              Join Us
+            </button>
+          </section>
+        </section>     
+      </main>
+    </div>
+    
+    <footer>
+      <a href="contact-us.html" class="contact-footer">Contact us</a>
+      <p class="copyright">Copyright &copy; 2021 WCD. All right reserved</p>
+    </footer>
 
     <script src="src/event.js"></script>
     <script src="src/header.js"></script>
