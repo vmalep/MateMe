@@ -73,7 +73,7 @@ textarea {
 }
 
 input[type="submit"] {
-        margin-bottom: 400px; /* Pierre: changed from 100 to 400 to have the all picture fitting the screen */
+        margin-bottom: 400px; /* Pierre: changed from 100 to 400 to have the all picture fitting the screen */  
         border-radius: 8px;
         padding: 10px 50px;
         font-size: 17px;
@@ -105,11 +105,3 @@ input[type="submit"] {
         width: 80%;    
     } 
   } 
-
-  /* Pierre: Not needed anymore bc setting in the default */
-/*   @media screen and (max-width: 768px) { 
-    input[type="submit"] {
-      margin-bottom: 400px;
-      
-    }
- } */
