@@ -22,7 +22,7 @@
   <script type="text/javascript" src="src/globalVar.js"></script> 
 
   </head>
-  <section id="createeventbody">  <!-- ?? Why out of the body ??  -->
+
 <body>
   <div class="container">
     <header id="navBar-header">
@@ -50,41 +50,43 @@
         </ul>
       </nav>
     </header>
-    <h2 class="createeventh2">Create your event</h2>
-    <form class="formcreateevent">
-      <label for="firstName"><span class="createeventlabel">What's your name?</span></label><br />
-      <input
-        type="text"
-        id="createeventname"
-        name="name"
-        placeholder="Tell us your name"
-      /><br />
-      <label for="city"><span class="createeventlabel">Select a city from the list</span></label><br />
-      <input
-        type="text"
-        id="createeventcity"
-        name="city"
-        placeholder= "City of the event"
-        list= "cities"
-      />
-      <datalist id="cities">
-        <option>Paris</option>
-    <option>Barcelona</option>
-    <option>Berlin</option>
-  </datalist>
-      <br />
-      <label for="date"><span class="createeventlabel">Select a date</span></label><br />
-      <input
-        type="date"
-        id="createeventdate"
-        name="date"
-        placeholder="Pick a date"
-      /><br />
-      <label for="message"><span class="createeventlabel">Tell us about the event</span></label><br />
-      <textarea id="messagecreateevent" name="message" onfocus="this.value=''">Info about the event</textarea><br />
-      <input id="button" type="submit" value="Submit" />
-    </form>
-    </section> <!-- ?? Why like this ??  -->
+
+    <section id="createeventbody">
+      <h2 class="createeventh2">Create your event</h2>
+      <form class="formcreateevent">
+        <label for="firstName"><span class="createeventlabel">What's your name?</span></label><br />
+        <input
+          type="text"
+          id="createeventname"
+          name="name"
+          placeholder="Tell us your name"
+        /><br />
+        <label for="city"><span class="createeventlabel">Select a city from the list</span></label><br />
+        <input
+          type="text"
+          id="createeventcity"
+          name="city"
+          placeholder= "City of the event"
+          list= "cities"
+        />
+        <datalist id="cities">
+          <option>Paris</option>
+      <option>Barcelona</option>
+      <option>Berlin</option>
+    </datalist>
+        <br />
+        <label for="date"><span class="createeventlabel">Select a date</span></label><br />
+        <input
+          type="date"
+          id="createeventdate"
+          name="date"
+          placeholder="Pick a date"
+        /><br />
+        <label for="message"><span class="createeventlabel">Tell us about the event</span></label><br />
+        <textarea id="messagecreateevent" name="message" onfocus="this.value=''">Info about the event</textarea><br />
+        <input id="button" type="submit" value="Submit" />
+      </form>
+      </section> <!-- ?? Why like this ??  -->
   </div>
 <footer>
   <a href="contact-us.html" class="contact-footer">Contact us</a>

@@ -1,20 +1,3 @@
-/* This are properties for indes.html (?)
-
-  #page-container {
-  position: relative;
-  min-height: 100vh;
-}
-
-not correct. It's something for index (?)
-
-/* Footer height */ 
-/*
-#content-wrap {
-  padding-bottom: 3rem;    
-  
-}
-*/
-
 footer {
   display: flex;
   align-self: flex-end;
