@@ -1,17 +1,4 @@
-/* .city-body {
-  font-family: sans-serif;
-  margin: 0px;
-  box-sizing: border-box;
-  background-image: url("../img/torre-eiffel-3.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-} */
-
-/* To be replaced by JS so the background image is the one of the selected town */
 .city-body{
-  /* background-image: url("../img/torre-eiffel-3.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -60,6 +47,7 @@
   border: 1px black solid;
   border-radius: 10px;
   max-width: 500px;
+  min-width: 300px;
   padding: 10px 20px;
   margin: 10px;
   display: flex;
@@ -79,6 +67,7 @@
 .part2 {
   display: flex;
   justify-content: flex-end;
+  align-items: flex-end;
   flex-direction: column;
   padding-left: 50px;
   padding-top: 5px;

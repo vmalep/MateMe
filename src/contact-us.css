@@ -6,5 +6,5 @@
     background-size: cover;
     object-fit: cover;
     height: 100%;
-  
+    min-height: 100%;
   }
