@@ -53,10 +53,10 @@ function createMobileCard(title, imageUrl) {
 
 for (let i = 0; i < cityList.length; i++) {
   createMobileCard(cityList[i].name, cityList[i].picture);
-  console.log("Adding " + cityList[i].name);
+  /* console.log("Adding " + cityList[i].name); */
 }
 
 for (let i = 0; i < cityList.length; i++) {
   createLargeCard(cityList[i].name, cityList[i].picture);
-  console.log("Adding Large " + cityList[i].name);
+  /* console.log("Adding Large " + cityList[i].name); */
 }

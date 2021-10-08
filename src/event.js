@@ -13,12 +13,12 @@ if (urlParams.has("eventId")) {
   eventId = urlParams.get("eventId");
 } else console.log("event note defined");
 
-console.log(cityName + eventId);
+/* console.log(cityName + eventId); */
 
 const cityData = cityList.filter(city => city.name == cityName);
 const eventData = eventList.filter(event => event.eventId == eventId)[0];
 
-console.log(eventData.pictureURL);
+/* console.log(eventData.pictureURL); */
 
 document.querySelector(".event-body").style.backgroundImage = `url(${eventData.pictureURL})`;
 document.getElementById("creator-of-event").innerHTML = "Jane";

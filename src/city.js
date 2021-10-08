@@ -14,7 +14,7 @@ const cityData = cityList.filter(city => city.name == cityName);
 /* https://medium.com/@melaniecp/filtering-an-arrays-objects-based-on-a-value-in-a-key-value-array-using-filter-and-includes-27268968308f */
 
 const eventData = eventList.filter(event => event.city == cityName);
-console.log(eventData);
+/* console.log(eventData); */
 
 const cityBody = document.querySelector(".city-body");
 cityBody.style.backgroundImage = `url(${cityData[0].picture})`;
