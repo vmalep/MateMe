@@ -2,18 +2,30 @@ const QueryString = window.location.search;
 const urlParams = new URLSearchParams(QueryString);
 
 let cityName = "";
-let eventName = "";
+let eventId = "";
 
 /* Getting the city parameter from the url */
 if (urlParams.has("city")) {
   cityName = urlParams.get("city");
 } else console.log("city note defined");
 
-if (urlParams.has("event")) {
-  eventName = urlParams.get("event");
+if (urlParams.has("eventId")) {
+  eventId = urlParams.get("eventId");
 } else console.log("event note defined");
 
-console.log(cityName + eventName);
+console.log(cityName + eventId);
+
+const cityData = cityList.filter(city => city.name == cityName);
+const eventData = eventList.filter(event => event.eventId == eventId)[0];
+
+console.log(eventData.pictureURL);
+
+document.getElementById("event-body-id").style.backgroundImage = `url(${eventData.pictureURL})`;
+document.getElementById("creator-of-event").innerHTML = "Jane";
+document.querySelector(".event-title").innerHTML = eventData.name;
+document.querySelector(".display-event-description").innerHTML = eventData.briefDescr;
+document.getElementById("event-date-input").innerHTML = eventData.dateAndTime;
+document.getElementById("event-location-input").innerHTML = eventData.placeName;
 
 /* console.log(urlParams.get("event")); //returns US */
 /* console.log(urlParams.append("status", "true")); //returns ?q=losAngeles&country=US&status=true */
