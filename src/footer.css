@@ -17,6 +17,10 @@ footer {
   text-decoration: none;
 }
 
+.city-page-footer {
+  margin-top: 200px;
+}
+
 .copyright {
   font-size: 80%;
   align-self: flex-end;
