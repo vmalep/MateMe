@@ -1,95 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <!-- you can't delete the next 2 stylesheet from cloudfare. We need them in order to have the icons apearing-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="src/city.css" />
+    <link rel="stylesheet" href="src/header.css" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/footer.css" />
+    
+    <title>MateMe</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-  <!-- you can't delete the next 2 stylesheet from cloudfare. We need them in order to have the icons apearing-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="src/city.css" />
-  <link rel="stylesheet" href="src/header.css" />
-  <link rel="stylesheet" href="src/style.css" />
-  <link rel="stylesheet" href="src/footer.css" />
-
-  <title>MateMe</title>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <!--     <link
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+<!--     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     /> -->
 
-  <!-- Déclaration of the global variables and initialisation of them (see: https://www.py4u.net/discuss/275309)-->
-  <script type='text/javascript'>
-    let cityList = [];
-    let eventList = [];
-  </script>
-  <script type="text/javascript" src="src/globalVar.js"></script>
-</head>
+    <!-- Déclaration of the global variables and initialisation of them (see: https://www.py4u.net/discuss/275309)-->
+    <script type='text/javascript' >
+      let cityList = [];
+      let eventList = [];
+    </script>
+    <script type="text/javascript" src="src/globalVar.js"></script>
+  </head>
 
-<!-- Start of the body part -->
+  <!-- Start of the body part -->
+  <body class="city-body">
+    <header id="navBar-header" class="nav-header">
+      <img
+        id="avatar"
+        src="https://images.unsplash.com/photo-1540331547168-8b63109225b7"
+      />
 
-<body class="city-body">
-  <div id="page-container">
-    <!-- Suggested here to keep the footer at the bottom -->
-    <div id="content-wrap">
-      <header id="navBar-header" class="nav-header">
-        <img id="avatar" src="https://images.unsplash.com/photo-1540331547168-8b63109225b7" />
-
-        <div class="brandName">
-          <a href="index.html">MateMe</a>
-        </div>
-
-        <nav id="dropdown-menu">
-          <button id="menu-btn">≡</button>
-          <ul id="menu" class="menu-off">
-            <li class="menu-list">
-              <a href="index.html" class="nav-link-header">Home</a>
-            </li>
-            <li class="menu-list">
-              <a href="createevent.html" class="nav-link-header">Create events</a>
-            </li>
-            <li class="menu-list">
-              <a href="contact-us.html" class="nav-link-header">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
-      <h2 class="city-h2">Paris</h2>
-      <!--Josh: to center events-->
-      <div id="event-list">
-
-        <section class="event1">
-          <div class="part1">
-            <h3 class="city-h3">Boardgame night</h3>
-            <div>
-              <span class="where1">
-                <i style="font-size: 24px;" class="fa">&#xf041;</i>
-                <a class="a-city" href="http://lenid-coconludique.com/">LE NID - Cocon Ludique</a>
-              </span>
-            </div>
-          </div>
-          <div class="part2">
-            <a href="event.html"><button class="buttonevent1">Join!</button></a>
-            <p class="date">
-              <i style="font-size: 24px;" class="fa">&#xf274;</i> 03.10.2021 / 6pm
-            </p>
-          </div>
-        </section>
-
+      <div class="brandName">
+        <a href="index.html">MateMe</a>
       </div>
-      <footer>
-        <a href="contact-us.html">Contact us</a>
-        <p>Copyright &copy; 2021 WCD. All right reserved</p>
-      </footer>
-    </div>
-  </div>
-  <script type="text/javascript" src="src/city.js"></script>
-  <script type="text/javascript" src="src/header.js"></script>
-</body>
 
+      <nav id="dropdown-menu">
+        <button id="menu-btn">≡</button>
+        <ul id="menu" class="menu-off">
+          <li class="menu-list">
+            <a href="index.html" class="nav-link-header">Home</a>
+          </li>
+          <li class="menu-list">
+            <a href="createevent.html" class="nav-link-header">Create events</a>
+          </li>
+          <li class="menu-list">
+            <a href="contact-us.html" class="nav-link-header">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <h2 class="city-h2">Paris</h2>
+    <!--Josh: to center events-->
+    <div id="event-list">
+
+      <section class="event1">
+        <div class="part1">
+          <h3 class="city-h3">Boardgame night</h3>
+          <div>
+            <span class="where1">
+              <i style="font-size: 24px;" class="fa">&#xf041;</i>
+              <a class="a-city" href="http://lenid-coconludique.com/"
+                >LE NID - Cocon Ludique</a
+              >
+            </span>
+          </div>
+        </div>
+        <div class="part2">
+          <a href="event.html"><button class="buttonevent1">Join!</button></a>
+          <p class="date">
+            <i style="font-size: 24px;" class="fa">&#xf274;</i> 03.10.2021 / 6pm
+          </p>
+        </div>
+      </section>
+
+    </div>
+    <footer>
+      <a href="contact-us.html">Contact us</a>
+      <p>Copyright &copy; 2021 WCD. All right reserved</p>
+    </footer>
+    <script type="text/javascript" src="src/city.js"></script>
+    <script type="text/javascript" src="src/header.js"></script>
+  </body>
 </html>
